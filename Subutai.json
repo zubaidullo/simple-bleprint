@@ -1,0 +1,24 @@
+					{
+  "name": "Simple-bluprint",
+  "description": "Simple blueprint",
+  "nodes": [
+    {
+      "name": "master",
+      "template": "master",
+      "peer_group": "MASTER-GROUP-1",
+      "size": "LARGE"
+    }
+  ],
+  "peerGroups": [
+    {
+      "name": "MASTER-GROUP-1",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "512MiB",
+        "minFreeDiskSpace": "500MiB"
+      }
+    }
+  ],
+  "configuration": {}
+}
