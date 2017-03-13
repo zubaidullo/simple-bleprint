@@ -4,7 +4,7 @@
   "nodes": [
     {
       "name": "master",
-      "template": "master",
+      "template": "master@a697e70f3fc538b4f4763588a7868388",
       "peer_group": "MASTER-GROUP-1",
       "size": "LARGE"
     }
