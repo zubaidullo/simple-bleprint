@@ -1,24 +1,25 @@
-					{
-  "name": "Simple-bluprint",
-  "description": "Simple blueprint",
-  "nodes": [
-    {
-      "name": "master",
-      "template": "master",
-      "peer_group": "MASTER-GROUP-1",
-      "size": "LARGE"
-    }
-  ],
-  "peerGroups": [
-    {
-      "name": "MASTER-GROUP-1",
-      "maxPeersInGroup": "1",
-      "hwPreferences": {
-        "avgCpuLoad": "10",
-        "minFreeRam": "512MiB",
-        "minFreeDiskSpace": "500MiB"
-      }
-    }
-  ],
-  "configuration": {}
+{
+    "name": "simple-blueprint",
+    "description": "This is test blueprint with minimal requirements of reources",
+    "nodes": [{
+	"name": "master",
+	"template": "master",
+	"peer_group": "GROUP1",
+	"size": "SMALL"
+    }],
+    "peerGroups": [{
+	"name": "GROUP1",
+	"maxPeersInGroup": "1",
+	"pricingPref": {
+	    "maxPrice": "20"
+	},
+	"hwPreferences": {
+	    "avgCpuLoad": "10",
+	    "minFreeRam": "512MiB",
+	    "minFreeDiskSpace": "500MiB"
+	},
+	"zonePreferences": {},
+	"proximityPreferences": {}
+    }],
+    "configuration": {}
 }
