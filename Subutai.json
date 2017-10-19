@@ -4,13 +4,13 @@
   "nodes": [
     {
       "name": "backup-server",
-      "template": "apache",
+      "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
       "size": "MEDIUM"
     },
     {
       "name": "ubuntu16-server",
-      "template": "apache",
+      "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
       "size": "SMALL",
       "expose": [
