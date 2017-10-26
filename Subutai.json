@@ -27,12 +27,6 @@
           "port_ext": "4040"
         }
       ]
-    },
-    {
-      "name": "ansible-server",
-      "template": "generic-ansible@c2378c8343183ebabc66a640f181e7716744995d",
-      "peer_group": "CONFIG-GROUP",
-      "size": "TINY"
     }
   ],
   "peerGroups": [
