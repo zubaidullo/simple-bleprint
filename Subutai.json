@@ -12,21 +12,7 @@
       "name": "ubuntu16-server",
       "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
-      "size": "SMALL",
-      "expose": [
-        {
-          "protocol": "https",
-          "domain": "cloud.stage-hub.net",
-          "port_int": "80",
-          "port_ext": "443"
-        },
-        {
-          "protocol": "tcp",
-          "domain": "cloud.stage-hub.net",
-          "port_int": "22",
-          "port_ext": "4040"
-        }
-      ]
+      "size": "SMALL"
     }
   ],
   "peerGroups": [
