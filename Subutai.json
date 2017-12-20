@@ -1,5 +1,5 @@
 {
-  "name": "${environmentName}",
+  "name": "SubutaiBlueprint",
   "description": "Environment configuration test blueprint",
   "nodes": [
     {
@@ -7,12 +7,6 @@
       "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
       "size": "MEDIUM"
-    },
-    {
-      "name": "ubuntu16-server",
-      "template": "ubuntu16",
-      "peer_group": "HTTP-GROUP",
-      "size": "SMALL"
     }
   ],
   "peerGroups": [
@@ -21,17 +15,6 @@
       "pricingPref": {
         "maxPrice": "${maxPrice}"
       }
-    },
-    {
-      "name": "CONFIG-GROUP",
-      "pricingPref": {
-        "maxPrice": "${maxPrice}"
-      }
     }
-  ],
-  "sshKey": "ztimur",
-  "configuration": {
-    "playbook": "https://github.com/platium/commands/archive/master.zip",
-    "script": "main.yml"
-  }
+  ]
 }
