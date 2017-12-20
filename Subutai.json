@@ -13,7 +13,7 @@
     {
       "name": "HTTP-GROUP",
       "pricingPref": {
-        "maxPrice": "${maxPrice}"
+        "maxPrice": "50"
       }
     }
   ]
