@@ -9,7 +9,7 @@
       "size": "TINY"
     }
   ],
-  "sshKey": "root",
+  "sshKey": "root  ,  sydyk",
   "peerGroups": [
     {
       "name": "HTTP-GROUP",
