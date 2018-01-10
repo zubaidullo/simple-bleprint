@@ -7,6 +7,18 @@
       "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
       "size": "${type}"
+    },
+     {
+      "name": "backup-server1",
+      "template": "ubuntu16",
+      "peer_group": "HTTP-GROUP",
+      "size": "${type1}"
+    },
+     {
+      "name": "backup-server2",
+      "template": "ubuntu16",
+      "peer_group": "HTTP-GROUP",
+      "size": "${type2}"
     }
   ],
   "peerGroups": [
