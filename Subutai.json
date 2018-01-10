@@ -6,7 +6,7 @@
       "name": "backup-server",
       "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
-      "size": "${ubuntu16ContainerType}"
+      "size": "${type}"
     }
   ],
   "peerGroups": [
