@@ -1,5 +1,5 @@
 {
-  "name": "SubutaiBlueprint",
+  "name": "${environmentName}",
   "description": "Environment configuration test blueprint",
   "nodes": [
     {
@@ -9,12 +9,11 @@
       "size": "TINY"
     }
   ],
-  "sshKey": "sydyk,   ",
   "peerGroups": [
     {
       "name": "HTTP-GROUP",
       "pricingPref": {
-        "maxPrice": "50"
+         "maxPrice": "${maxPrice}"
       }
     }
   ]
