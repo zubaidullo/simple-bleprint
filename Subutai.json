@@ -49,5 +49,6 @@
          "maxPrice": "${maxPrice}"
       }
     }
-  ]
+  ],
+  "backupContainerType": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE"
 }
