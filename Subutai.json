@@ -3,44 +3,11 @@
   "description": "Environment configuration test blueprint",
   "nodes": [
     {
-      "name": "backup-server",
+      "name": "${containerName}",
       "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
       "size": "${backupContainerType}"
-    },
-     {
-      "name": "backup-server1",
-      "template": "ubuntu16",
-      "peer_group": "HTTP-GROUP",
-      "size": "${type1}"
-    },
-     {
-      "name": "backup-server2",
-      "template": "ubuntu16",
-      "peer_group": "HTTP-GROUP",
-      "size": "${type2}"
-    },
-     {
-      "name": "backup-server3",
-      "template": "ubuntu16",
-      "peer_group": "HTTP-GROUP",
-      "size": "${type3}"
     }
-    ,
-     {
-      "name": "backup-server54",
-      "template": "ubuntu16",
-      "peer_group": "HTTP-GROUP",
-      "size": "${type4}"
-    }
-     ,
-     {
-      "name": "backup-server545",
-      "template": "ubuntu16",
-      "peer_group": "HTTP-GROUP",
-      "size": "${type5}"
-    }
-    
   ],
   "peerGroups": [
     {
@@ -50,5 +17,7 @@
       }
     }
   ],
-  "backupContainerType": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE"
+  "backupContainerType": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE",
+  "containerName" : "Enter container name here",
+  "maxPrice": "Peers max price"
 }
