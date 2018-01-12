@@ -20,5 +20,5 @@
   "backupContainerType": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE",
   "containerName" : "Enter container name here",
   "maxPrice": "Peers max price",
-  "environmentName": "Enter environment name test"
+  "environmentName": "Enter environment name"
 }
