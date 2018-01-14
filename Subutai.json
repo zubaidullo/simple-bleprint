@@ -13,12 +13,26 @@
     {
       "name": "HTTP-GROUP",
       "pricingPref": {
-         "maxPrice": "${maxPrice}"
+        "maxPrice": "${maxPrice}"
       }
     }
   ],
-  "backupContainerType": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE",
-  "containerName" : "Enter container name here",
-  "maxPrice": "Peers max price",
-  "environmentName": "Enter environment name Sydyk"
+  "backupContainerType": {
+    "description": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE",
+    "type": "enum",
+    "default": "SMALL",
+    "validation": "TINY,SMALL,MEDIUM,LARGE,HUGE"
+  },
+  "environmentName": {
+    "description": "Enter environment name",
+    "type": "string",
+    "default": "hey man",
+    "validation": "([a-zA-Z0-9])"
+  },
+  "maxPrice": {
+    "description": "Enter the max price",
+    "type": "int",
+    "default": "5.5",
+    "validation": "\\d+\\.\\d+"
+  }
 }
