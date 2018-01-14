@@ -17,6 +17,18 @@
       }
     }
   ],
+    "configuration": {
+    "playbook": "https://github.com/platium/simple-bleprint/archive/master.zip",
+    "script": "main.yml",
+    "groups": [
+      {
+        "name": "db",
+        "nodes_name": [
+          "backup-server"
+        ]
+      }
+    ]
+  },
   "backupContainerType": {
     "description": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE",
     "type": "enum",
