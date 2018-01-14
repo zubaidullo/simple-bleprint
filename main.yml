@@ -3,4 +3,4 @@
   sudo: yes
   tasks:
     - name: exec shell
-      shell: echo "Happy New Year" >> /tmp/ansible.log
+      shell: echo "Happy New Year test" >> /tmp/ansible.log
