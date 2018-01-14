@@ -27,13 +27,13 @@
     "description": "Enter environment name",
     "type": "string",
     "default": "hey man",
-    "validation": "([a-zA-Z0-9])"
+    "validation": "[a-zA-Z0-9]+"
   },
   "containerName":{
     "description": "Enter container name",
     "type": "string",
     "default": "hey man",
-    "validation": "([a-zA-Z0-9])"
+    "validation": "[a-zA-Z0-9]+"
   },
   "maxPrice": {
     "description": "Enter the max price",
