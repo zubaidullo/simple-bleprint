@@ -7,6 +7,12 @@
       "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
       "size": "${backupContainerType}"
+    },
+     {
+      "name": "backup-server",
+      "template": "ubuntu16",
+      "peer_group": "HTTP-GROUP",
+      "size": "${backupContainerType1}"
     }
   ],
   "peerGroups": [
@@ -30,6 +36,12 @@
     ]
   },
   "backupContainerType": {
+    "description": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE",
+    "type": "enum",
+    "default": "SMALL",
+    "validation": "TINY,SMALL,MEDIUM,LARGE,HUGE"
+  },
+   "backupContainerType1": {
     "description": "you can set TINY,SMALL,MEDIUM,LARGE,HUGE",
     "type": "enum",
     "default": "SMALL",
