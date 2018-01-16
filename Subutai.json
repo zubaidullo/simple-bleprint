@@ -9,7 +9,7 @@
       "size": "${backupContainerType}"
     },
      {
-      "name": "backup-server",
+      "name": "backup-server1",
       "template": "ubuntu16",
       "peer_group": "HTTP-GROUP",
       "size": "${backupContainerType1}"
