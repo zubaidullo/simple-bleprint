@@ -13,7 +13,7 @@
     },
     {
       "hostname": "ubuntu162",
-      "template": "ubuntu16",
+      "template": "debian-stretch",
       "peer-criteria": "HTTP-GROUP",
       "size": "${wordpressContainerType}",
       "port-mapping": [
