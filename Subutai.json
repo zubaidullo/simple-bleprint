@@ -6,13 +6,7 @@
   "author": "Sydyk",
   "containers": [
     {
-      "hostname": "ubutnu161",
-      "template": "debian-stretch",
-      "peer-criteria": "HTTP-GROUP",
-      "size": "TINY"
-    },
-    {
-      "hostname": "ubuntu162",
+      "hostname": "zzzzz",
       "template": "debian-stretch",
       "peer-criteria": "HTTP-GROUP",
       "size": "TINY"
@@ -37,7 +31,7 @@
       {
         "name": "db",
         "hostnames": [
-          "ubutnu161"
+          "zzzzz"
         ]
       }
     ]
