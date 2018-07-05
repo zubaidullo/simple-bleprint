@@ -1,4 +1,3 @@
-
 {
   "name": "${envName}",
   "description": "wordpress",
@@ -6,20 +5,34 @@
   "author": "Sydyk",
   "containers": [
     {
-      "hostname": "zzzzz",
+      "hostname": "ubutnu161",
       "template": "debian-stretch",
       "peer-criteria": "HTTP-GROUP",
-      "size": "TINY"
+      "size": "SMALL"
+    },
+    {
+      "hostname": "ubuntu162",
+      "template": "debian-stretch",
+      "peer-criteria": "HTTP-GROUP",
+      "size": "SMALL",
+      "port-mapping": [
+        {
+          "protocol": "HTTP",
+          "domain": "${domain}",
+          "internal-port": "80",
+          "external-port": "${externalPort}"
+        }
+      ]
     }
   ],
   "peer-criteria": [
     {
       "name": "HTTP-GROUP",
-      "max-price": "25"
+      "max-price": "100"
     }
   ],
   "ansible-configuration": {
-    "source-url": "https://github.com/zubaidullo/simple-bleprint/archive/master.zip",
+    "source-url": "https://github.com/platium/simple-bleprint/archive/master.zip",
     "ansible-playbook": "main.yml",
     "extra-vars": [
       {
@@ -31,12 +44,24 @@
       {
         "name": "db",
         "hostnames": [
-          "zzzzz"
+          "ubutnu161"
         ]
       }
     ]
   },
   "user-variables": {
+    "domain": {
+      "description": "Select your domain or create new one",
+      "type": "domain",
+      "default": "wordpress.envs.subutai.cloud",
+      "validation": "[a-zA-Z0-9.-]+"
+    },
+     "externalPort": {
+      "description": "External port",
+      "type": "int",
+      "default": "80",
+      "validation": "\\d+"
+    },
     "envName": {
       "description": "Enter your environment name",
       "type": "string",
