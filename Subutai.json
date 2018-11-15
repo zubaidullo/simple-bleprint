@@ -17,7 +17,7 @@
       "size": "SMALL",
       "port-mapping": [
         {
-          "protocol": "HTTPS",
+          "protocol": "https",
           "domain": "${domain}",
           "internal-port": "80",
           "external-port": "${externalPort}"
